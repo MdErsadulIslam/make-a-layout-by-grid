@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid apply</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 300px;
+            width: 600px;
+            gap: 5px;
+        }
+       .main-box-left{
+        background-color:red ;
+       } 
+       .main-box-right{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        gap: 5px;
+       }
+       .sub-box-top{
+        background-color: yellow;
+       }
+       .sub-box-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+       }
+       .tar-box-left{
+        background-color: darkgoldenrod;
+       }
+      .tar-box-right{
+        background-color: aquamarine;
+      } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-box-left"></div>
+        <div class="main-box-right">
+            <div class="sub-box-top"></div>
+            <div class="sub-box-bottom">
+                <div class="tar-box-left"></div>
+                <div class="tar-box-right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
